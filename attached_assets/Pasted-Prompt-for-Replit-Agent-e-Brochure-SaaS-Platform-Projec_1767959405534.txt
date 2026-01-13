@@ -1,0 +1,62 @@
+Prompt for Replit Agent: "e-Brochure SaaS Platform"
+Project Goal: Build a professional, responsive marketing website and lead generation platform for "e-Brochure," a SaaS tool that helps retail companies create digital brochures.
+
+Tech Stack Requirements:
+
+Framework: Next.js (App Router) or Vite + React.
+
+Styling: Tailwind CSS.
+
+Components: Lucide-React for icons, Framer Motion for animations.
+
+Forms: React Hook Form with validation.
+
+Page Structure & Features:
+
+Home Page (Hero Focus):
+
+Headline: "Turn Your Market Discounts into Digital Brochures in Seconds."
+
+Sub-headline: "No design knowledge required. Select products, choose a template, and share instantly via WhatsApp, Instagram, or Facebook."
+
+UI: A "Hero" section with a split layout—text on the left, and a decorative "Phone Mockup" container on the right for a video/demo.
+
+"How It Works" Page:
+
+Create a vertical 3-step stepper component (Upload -> Design -> Share).
+
+YouTube Integration: Create a responsive video grid component to embed YouTube promotional and "how-to" videos.
+
+Comparison Section:
+
+A "Modern vs. Traditional" feature table highlighting advantages over competitors (Cost, Speed, Analytics, Eco-friendly).
+
+Pricing & Subscription:
+
+A 3-tier pricing toggle (Monthly/Yearly) with cards for "Starter," "Professional," and "Enterprise" plans.
+
+Reference Gallery:
+
+A filterable grid/portfolio page to showcase example brochures (use high-quality image placeholders).
+
+Form Pages (Custom Logic):
+
+Sales Form: A detailed contact form (Name, Company, Phone, Industry).
+
+Template Request Page: A specialized form allowing users to submit requests for new brochure layouts.
+
+Social Proof:
+
+A scrolling logo cloud for "Partner Brands."
+
+A "Testimonials" masonry grid with 3-4 sample reviews.
+
+Technical Specifics:
+
+Navigation: A sticky, frosted-glass (glassmorphism) header.
+
+SEO: Implement metadata for each page.
+
+Interactivity: Smooth scroll, hover effects on pricing cards, and mobile-responsive hamburger menu.
+
+Instructions for Replit: "Please initialize the project with the folder structure above. Start by building the Landing Page and the Navigation. Ensure all components are modular and use Tailwind CSS for all styling."

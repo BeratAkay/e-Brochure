@@ -1,0 +1,137 @@
+1. Trusted Brands / References Animation (Smooth Continuity Fix)
+Current Problem
+
+The rotating text/logos can be paused on hover, but:
+
+When the mouse leaves, the animation restarts from the beginning
+
+When the user drags (scrolls) the animation manually and releases it, the animation resets to the start
+
+This breaks visual continuity and feels unnatural and non-fluid
+
+Required Behavior (Very Important)
+
+The animation must resume from the exact position where it was stopped
+
+Whether the animation is:
+
+Paused via hover
+
+Moved manually via mouse drag
+
+➡️ When the mouse leaves the animation area, it must continue from the last position, not restart
+
+Functional Requirements
+
+Auto-scrolling animation (right to left) by default
+
+On hover:
+
+Animation pauses smoothly
+
+On mouse drag:
+
+User can move the carousel freely (left / right)
+
+On mouse release or mouse leave:
+
+Animation continues from the current position
+
+No “snapshot reset” or jump back to the beginning
+
+Motion must feel:
+
+Continuous
+
+Fluid
+
+Natural
+
+Think of it like a real, infinite marquee that never resets its position.
+
+2. Translation (i18n) – Critical Fixes
+Global Requirement
+
+Translation must work everywhere in the application, including:
+
+Header
+
+Body content
+
+Footer
+
+All pages
+
+No hardcoded text should remain
+
+All static and dynamic texts must be included in the translation system
+
+Footer Translation Issue
+
+The footer section is currently not translated at all
+
+Footer content must fully respond to language changes
+
+Specific Untranslated Texts (Must Be Fixed)
+
+Ensure the following sections are fully translated:
+
+Homepage
+
+“GÜVENEN MARKALAR” title
+
+Under “WHY DIGITAL?”
+
+All items under Traditional
+
+All items under PDF
+
+Under “e-Brochure”
+
+“%100 Digital”
+
+“Native feel”
+
+Pages (Entire Pages Not Translating)
+
+Brochures page (entire page)
+
+Custom Design page (entire page)
+
+Pricing page (entire page)
+
+Contact Section
+
+Translate the following labels:
+
+“Email Us”
+
+“Call Us”
+
+“Visit Us”
+
+Translation System Requirements
+
+Use a centralized i18n structure
+
+No inline or hardcoded strings
+
+Language switch must instantly update:
+
+Visible content
+
+Footer
+
+Page-specific content
+
+Ensure consistency across all pages
+
+3. Overall Expectation
+
+Smooth, premium SaaS-level user experience
+
+No animation resets unless the page is refreshed
+
+Language switching should feel reliable and complete
+
+The product should feel polished, stable, and professional

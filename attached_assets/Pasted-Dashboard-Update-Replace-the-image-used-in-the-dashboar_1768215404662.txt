@@ -1,0 +1,99 @@
+Dashboard Update
+
+Replace the image used in the dashboard with the provided screenshot
+
+Use the exact uploaded image instead of any placeholder or stock visuals
+
+Ensure the dashboard visual looks clean, professional, and aligned with the overall UI
+
+Language Selector (UX Improvement)
+
+Convert the language selection area into a single button
+
+When the user clicks this button, display the available language options in a dropdown or popover menu
+
+The interaction should feel modern and minimal, not static
+
+The language selector should be easily accessible but visually clean
+
+Translation (Critical Functional Fix)
+
+Fix translation issues across the entire application
+
+Currently, some text sections are not translated properly, for example:
+
+The text under “Why Digital?”
+
+Feature descriptions under “e-Brochure”, such as:
+
+Low cost
+
+Instant publishing
+
+Real-time updates
+
+These texts remain unchanged when switching languages
+
+Requirements:
+
+Translation must work consistently on every page and every section
+
+No hardcoded text should remain untranslated
+
+Use a centralized translation system (i18n structure)
+
+Ensure all dynamic and static texts are included in translation files
+
+Trusted Brands / References Section
+
+Improve the rotating “Trusted Brands” / references carousel
+
+In addition to auto-scrolling:
+
+Allow users to pause the animation on hover
+
+Enable manual control with mouse drag (click and drag left/right)
+
+The interaction should feel smooth, responsive, and dynamic
+
+The carousel must resume auto-scrolling after user interaction
+
+Logo Redesign
+
+Replace the current rocket-based logo
+
+The rocket concept does not align well with the product vision
+
+New logo requirements:
+
+More suitable for a digital brochure / retail / marketing product
+
+Simple, modern, and professional
+
+Reflects concepts such as:
+
+Digital catalogs
+
+Fast content creation
+
+Smart retail marketing
+
+Must work well in:
+
+Header
+
+Dashboard
+
+Favicon
+
+Social sharing previews
+
+Overall Expectations
+
+Maintain a modern, SaaS-style design
+
+Prioritize usability and clarity
+
+Ensure visual consistency across all pages
+
+The application should feel reliable, professional, and business-ready
