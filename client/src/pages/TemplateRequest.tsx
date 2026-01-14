@@ -7,11 +7,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Palette, PenTool, Layout } from "lucide-react";
-
 import { useLanguage } from "../hooks/use-language";
+import { useToast } from "@/hooks/use-toast";
 
 export default function TemplateRequest() {
   const { t } = useLanguage();
+  const { toast } = useToast();
   const form = useForm<InsertTemplateRequest>({
     resolver: zodResolver(insertTemplateRequestSchema),
     defaultValues: {
@@ -25,7 +26,9 @@ export default function TemplateRequest() {
 
   const onSubmit = (data: InsertTemplateRequest) => {
     mutation.mutate(data, {
-      onSuccess: () => form.reset()
+      onSuccess: () => {
+        form.reset();
+      }
     });
   };
 

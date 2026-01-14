@@ -81,9 +81,11 @@ export default function Gallery() {
           {examples.map((item, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: idx * 0.1 }}
+              whileHover={{ y: -5, scale: 1.02 }}
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
             >
               <div className="relative h-60 overflow-hidden">

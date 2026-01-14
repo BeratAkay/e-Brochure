@@ -17,7 +17,7 @@ export const errorSchemas = {
 export const api = {
   contact: {
     submit: {
-      method: 'POST' as const,
+      method: 'POST' as const, 
       path: '/api/contact',
       input: insertContactRequestSchema,
       responses: {

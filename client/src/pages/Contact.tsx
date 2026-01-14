@@ -9,9 +9,11 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "../hooks/use-language";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
   const { t } = useLanguage();
+  const { toast } = useToast();
   const form = useForm<InsertContactRequest>({
     resolver: zodResolver(insertContactRequestSchema),
     defaultValues: {
@@ -27,7 +29,9 @@ export default function Contact() {
 
   const onSubmit = (data: InsertContactRequest) => {
     mutation.mutate(data, {
-      onSuccess: () => form.reset()
+      onSuccess: () => {
+        form.reset();
+      }
     });
   };
 

@@ -57,10 +57,10 @@ export default function HowItWorks() {
           {steps.map((step, idx) => (
             <motion.div 
               key={idx}
-              initial={{ opacity: 0, x: idx % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7 }}
               className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
             >
               <div className="flex-1 space-y-6">

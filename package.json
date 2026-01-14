@@ -57,6 +57,7 @@
     "react-hook-form": "^7.52.1",
     "react-resizable-panels": "^2.0.20",
     "recharts": "^2.12.7",
+    "resend": "^6.7.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.1",
@@ -74,7 +75,7 @@
     "drizzle-kit": "^0.31.8",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6",
-    "tsx": "^4.16.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.5.3",
     "vite": "^5.3.3"
   }

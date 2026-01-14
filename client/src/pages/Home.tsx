@@ -27,7 +27,7 @@ const testimonials = [
     bg: "bg-blue-50"
   },
   {
-    quote: "Analizler tam bir devrim. Broşürlerimizi kimlerin okuduğunu artık biliyorum.",
+    quote: "Analizler tam bir devmir. Broşürlerimizi kimlerin okuduğunu artık biliyorum.",
     author: "Mehmet T.",
     role: "Satış Lideri",
     bg: "bg-purple-50"
@@ -144,23 +144,28 @@ export default function Home() {
       {/* Benefits Section */}
       <section className="py-24 bg-slate-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t("benefits")}</h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-lg">
               {t("benefitsSubtitle")}
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
             {steps.map((step, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 group transition-all duration-300 hover:shadow-xl"
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 group transition-all duration-300 hover:shadow-2xl"
               >
                 <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   {step.icon}
@@ -183,12 +188,22 @@ export default function Home() {
       {/* Comparison Table */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
             <h2 className="text-3xl font-display font-bold mb-4">{t("whyDigital")}</h2>
             <p className="text-slate-600">{t("whyDigitalSubtitle")}</p>
-          </div>
+          </motion.div>
 
-          <div className="border border-slate-200 rounded-2xl overflow-hidden shadow-lg">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="border border-slate-200 rounded-2xl overflow-hidden shadow-lg"
+          >
             <div className="grid grid-cols-3 bg-slate-50 border-b border-slate-200 p-4 text-sm font-bold text-slate-700">
               <div className="pl-4">{t("feature")}</div>
               <div className="text-center text-slate-400">{t("traditionalPdf")}</div>
@@ -210,19 +225,30 @@ export default function Home() {
                 <div className="text-center font-bold text-primary">{row.app}</div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Testimonials */}
       <section className="py-24 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-display font-bold mb-12 text-center">{t("testimonialsTitle")}</h2>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl font-display font-bold mb-12 text-center"
+          >
+            {t("testimonialsTitle")}
+          </motion.h2>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((test, i) => (
               <motion.div 
                 key={i}
-                whileHover={{ scale: 1.02 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                whileHover={{ scale: 1.02, y: -5 }}
                 className="bg-slate-800 p-8 rounded-2xl border border-slate-700"
               >
                 <div className="flex gap-1 mb-4">
