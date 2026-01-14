@@ -17,12 +17,12 @@ export default function Pricing() {
       price: 0,
       desc: t("starterDesc"),
       features: [
-        "1 Active Brochure",
-        "Basic Analytics",
-        "Standard Templates",
-        "e-Brochure Branding"
+        t("feature1"),
+        t("feature2"),
+        t("feature3"),
+        t("feature4")
       ],
-      missing: ["Custom Domain", "Team Collaboration", "API Access"]
+      missing: [t("missing1"), t("missing2"), t("missing3")]
     },
     {
       name: t("professional"),
@@ -30,26 +30,26 @@ export default function Pricing() {
       popular: true,
       desc: t("professionalDesc"),
       features: [
-        "10 Active Brochures",
-        "Advanced Analytics",
-        "Premium Templates",
-        "No Branding",
-        "Custom Domain",
-        "Priority Support"
+        t("feature5"),
+        t("feature6"),
+        t("feature7"),
+        t("feature8"),
+        t("feature9"),
+        t("feature10")
       ],
-      missing: ["API Access"]
+      missing: [t("missing3")]
     },
     {
       name: t("enterprise"),
       price: 99,
       desc: t("enterpriseDesc"),
       features: [
-        "Unlimited Brochures",
-        "Real-time Heatmaps",
-        "Custom Design System",
-        "API Access",
-        "SSO & Advanced Security",
-        "Dedicated Success Manager"
+        t("feature11"),
+        t("feature12"),
+        t("feature13"),
+        t("feature14"),
+        t("feature15"),
+        t("feature16")
       ],
       missing: []
     }

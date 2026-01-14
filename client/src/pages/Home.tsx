@@ -4,6 +4,14 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { LogoCarousel } from "@/components/LogoCarousel";
 import { useLanguage } from "../hooks/use-language";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -100,12 +108,29 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-full blur-3xl transform scale-75" />
               <div className="relative mx-auto border-gray-800 bg-gray-900 border-[8px] rounded-[1.5rem] h-[400px] w-full max-w-[600px] shadow-2xl overflow-hidden">
-                <div className="w-full h-full bg-slate-100 flex items-center justify-center">
-                  <img 
-                    src="/src/assets/dashboard-preview.png" 
-                    alt="Platform Screenshot" 
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-full h-full bg-slate-100">
+                  <Carousel
+                    plugins={[
+                      Autoplay({
+                        delay: 3000,
+                      }),
+                    ]}
+                    className="w-full h-full"
+                  >
+                    <CarouselContent className="h-full">
+                      {[1, 2, 3].map((_, index) => (
+                        <CarouselItem key={index} className="h-full">
+                          <img 
+                            src="/src/assets/dashboard-preview.png" 
+                            alt={`Platform Screenshot ${index + 1}`} 
+                            className="w-full h-full object-cover"
+                          />
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-2" />
+                    <CarouselNext className="right-2" />
+                  </Carousel>
                 </div>
               </div>
             </motion.div>
@@ -116,13 +141,13 @@ export default function Home() {
       {/* Logo Carousel */}
       <LogoCarousel />
 
-      {/* Why e-Brochure */}
+      {/* Benefits Section */}
       <section className="py-24 bg-slate-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t("whyEBrochure")}</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t("benefits")}</h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-              {t("whyEBrochureSubtitle")}
+              {t("benefitsSubtitle")}
             </p>
           </div>
 

@@ -1,0 +1,124 @@
+1. Homepage Section Update
+Rename Section
+
+Replace “Why e-Brochure” with “Benefits”
+
+In Turkish, this section title must be “Faydaları”
+
+The section title and all related content must be fully translatable based on the selected language
+
+Content Purpose
+
+Explain the key benefits of using e-Brochure instead of traditional brochures
+
+Focus on:
+
+Speed
+
+Digital campaigns
+
+Social media sharing
+
+Advertising and analytics advantages
+
+2. New Page: “How It Works” (User Guide Page)
+
+Create an additional page named “How It Works”.
+
+Page Goal
+
+This page should explain how to use the application step by step
+
+Act as a user guide / onboarding page
+
+Page Content
+
+Clear written instructions on how to use e-Brochure
+
+Embedded tutorial videos explaining:
+
+Dashboard usage
+
+Brochure creation
+
+Template customization
+
+Publishing and promotion
+
+Translation Requirement
+
+The entire page must be fully translatable
+
+All texts and video titles/descriptions must change according to the selected language
+
+3. Dashboard Image Carousel
+Current State
+
+The dashboard currently contains a single static image
+
+Required Improvement
+
+Add multiple dashboard images
+
+Display them in a sliding carousel structure
+
+Functional Requirements
+
+Smooth horizontal sliding
+
+Auto-slide enabled
+
+Manual navigation support (swipe / arrows / drag)
+
+Clean and modern transition animations
+
+4. Pricing Page – Full Translation Support
+Translatable Pricing Elements
+
+Ensure the following elements are included in the translation system:
+
+Plan Names
+
+Starter (Başlangıç)
+
+Professional (Profesyonel)
+
+Enterprise (Kurumsal)
+
+Plan Features
+
+All feature descriptions listed under each pricing plan
+
+Global Pricing Requirement
+
+The entire Pricing page must be translated based on the selected language
+
+No hardcoded pricing text should remain
+
+5. Translation (i18n) – Global Rule
+
+All pages and components must fully respond to language changes
+
+Language switching must update:
+
+Section titles
+
+Page content
+
+Pricing plans and features
+
+Navigation labels
+
+Use a centralized translation system
+
+No static or hardcoded strings
+
+6. Overall UX Expectations
+
+Clear and logical content hierarchy
+
+Smooth, modern UI interactions
+
+Consistent translation behavior across all pages
+
+A polished SaaS-grade user experience

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, Share2, Target, BarChart, PlayCircle, Settings, Layout, Globe, Search } from "lucide-react";
+import { Zap, Share2, Target, BarChart, PlayCircle, Settings, Layout, Globe, Search, Layers } from "lucide-react";
 import { useLanguage } from "../hooks/use-language";
 
 const fadeIn = {
@@ -25,7 +25,7 @@ export default function HowItWorks() {
       video: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Placeholder
     },
     {
-      icon: <Share2 className="w-12 h-12 text-green-500" />,
+      icon: <Layers className="w-12 h-12 text-green-500" />,
       title: t("howItWorksStep3Title"),
       desc: t("howItWorksStep3Desc"),
       video: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Placeholder

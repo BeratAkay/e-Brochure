@@ -19,6 +19,7 @@ export function Navigation() {
 
   const links = [
     { href: "/", label: t("home") },
+    { href: "/how-it-works", label: t("howItWorks") },
     { href: "/gallery", label: t("brochures") },
     { href: "/pricing", label: t("pricing") },
     { href: "/contact", label: t("contact") },
